@@ -74,3 +74,5 @@ The Applications of Breath-first search are:
 ## Summary
 
 That was the breadth-first search algorithm, or the simple graph traversal algorithm. In conclusion, the algorithm must visit, examine, and update each unvisited node in a tree-like structure as part of the graph traversal process. The BFS algorithm is renowned for examining a graph's nodes and determining the shortest path across them. The BFS is an effective algorithm with a complexity of O(V + E), and it traverses a graph with fewer iterations in the least amount of time while avoiding infinite loops. Because of its robustness, the technique is employed in numerous real-world applications including web crawlers and P2P networks.
+
+LICENSE: MIT
