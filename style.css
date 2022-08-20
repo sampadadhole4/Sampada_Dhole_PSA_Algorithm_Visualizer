@@ -1,0 +1,140 @@
+/* MIT License
+
+Copyright (c) 2022 Sampada Dhole
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body { 
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+}
+
+#cy {
+  height: 70%;
+  width: 100%;
+}
+
+#origin {
+  font-size: 15px;
+}
+.drawing-area {
+  position: absolute;
+  top: 400;
+  background-color: rgb(27, 38, 56);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.maindiv{
+  text-decoration: none;
+  color: rgb(13, 12, 12);
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#heading{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+#head{
+  color: white;
+  text-align: center;
+  padding-top: 6rem;
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  /* background-color: black; */
+}
+#head2{
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+#heading1{
+  height: 100vh;
+  width:auto;
+  background-color: blueviolet;
+  background-image: url(images/honeycombsvg.svg);
+  opacity: 90%;
+  z-index: -1;
+}
+button{
+  width: 10rem;
+  padding: 1rem;
+  border: transparent;
+  border-radius: 0.5rem;
+}
+input{
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+#run{
+  background-color: rgb(2, 149, 255);
+  color: aliceblue;
+}
+#stopBFS{
+  background-color: rgb(202, 102, 15);
+  color: aliceblue;
+}
+#NewGraph{
+  border: solid;
+  border-color: rgb(202, 102, 15);
+  background-color: white;
+  color: rgb(0, 0, 0);
+
+
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  color: white;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+.down-arrow {
+
+  animation: jumpInfinite 1.5s infinite;
+}
